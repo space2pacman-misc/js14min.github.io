@@ -47,7 +47,10 @@
     <main class="main">
       <header class="header">
   <h1 class="title">JavaScript за <strong class="fourteen">14</strong> минут</h1>
-  <p class="subtitle">от <a href="https://jgthms.com" target="_blank">Jeremy Thomas</a></p>
+  <p class="subtitle">
+    от <a href="https://jgthms.com" target="_blank">Jeremy Thomas</a><br>
+    перевод <a href="http://yaroslav-i.ru" target="_blank">Ivanov Yaroslav</a>
+  </p>
 
   <div class="block">
     <a href="https://bulma.io" target="_blank">
@@ -59,9 +62,8 @@
   <noscript>
     <div class="message is-warning">
       <div class="message-body">
-        To learn JavaScript, you need to enable it first!
-        <br>
-        <a href="https://www.enable-javascript.com/" target="_blank" rel="nofollow">Learn how to enable JavaScript in your web browser</a>.
+          Чтобы изучить JavaScript, вам необходимо включить его первым!<br>
+        <a href="https://www.enable-javascript.com/" target="_blank" rel="nofollow">Узнайте, как включить JavaScript в своем веб-браузере</a>.
       </div>
     </div>
     <style type="text/css">#introduction{ display: none; }</style>
@@ -72,18 +74,18 @@
     <div class="message is-warning">
       <div class="message-body">
         <p>
-          It looks like you're on a <strong><span class="case is-mobile">mobile device</span> <span class="case is-tablet">tablet</span></strong>! рџ±
+          Похоже, вы находитесь на <strong><span class="case is-mobile">мобильном устройстве</span><span class="case is-tablet">планшете</span></strong>! 😱
         </p>
         <p>
-          But fear not! рџЉ
+          Но не бойтесь! 😊
         </p>
         <p>
-          While this tutorial is not optimized for this platform, I still made it readable enough for you to enjoy.
+          Хотя этот учебник не оптимизирован для этой платформы, я все же сделал его достаточно читаемым, чтобы вы могли наслаждаться.
         </p>
         <p>
-          You should however revisit it on a desktop later if you can, to experience all the features!
+          Вы должны, однако, вернуться на рабочий стол позже, если сможете, испытать все функции!
         </p>
-        <p>Anyway, <a onclick="showStep(1);">let's get started</a>!</p>
+        <p>Так или иначе, <a onclick="showStep(1);">Давайте начнем</a>!</p>
       </div>
     </div>
   </div>
@@ -128,9 +130,9 @@
   <div id="return" class="message is-success">
     <div class="message-body">
       <p>
-        It looks that you've already been here! рџѓ
+        Похоже, вы уже здесь!
         <br>
-        Do you want to <a id="resume">resume from where you left off</a> or <a id="reset">start over</a>?
+        Вы хотите <a id="resume">возобновить с того места, где вы остановились</a> или <a id="reset">начать сначала</a>?
       </p>
     </div>
   </div>
@@ -142,44 +144,44 @@
     <h2>Console <span class="stamp is-tool">tool</span></h2>
 
     <p>
-      Your browser comes with a <strong>developer console</strong> that allows you to type JavaScript directly in this webpage.
+      В вашем браузере есть <strong>консоль разработчика</strong>, которая позволяет вам набирать JavaScript прямо на этой веб-странице.
     </p>
 
     <div class="case is-chrome not-mobile not-tablet">
-      Since you're using <strong>Google Chrome</strong>, open the JavaScript console with
-      <span class="case is-windows is-linux"><kbd class="key">Ctrl</kbd><kbd class="plus">+</kbd><kbd class="key">Shift</kbd><kbd class="plus">+</kbd><kbd class="key">J</kbd> or <kbd class="key">F12</kbd></span>
-      <span class="case is-mac"><kbd class="key">вЊҐ</kbd><kbd class="plus">+</kbd><kbd class="key">вЊ</kbd><kbd class="plus">+</kbd><kbd class="key">J</kbd></span>
+      Поскольку вы используете <strong> Google Chrome </strong>, откройте консоль JavaScript с помощью
+      <span class="case is-windows is-linux"><kbd class="key">Ctrl</kbd><kbd class="plus">+</kbd><kbd class="key">Shift</kbd><kbd class="plus">+</kbd><kbd class="key">J</kbd> или <kbd class="key">F12</kbd></span>
+      <span class="case is-mac"><kbd class="key">⌥</kbd><kbd class="plus">+</kbd><kbd class="key">⌘</kbd><kbd class="plus">+</kbd><kbd class="key">J</kbd></span>
     </div>
 
     <div class="case is-firefox not-mobile not-tablet">
-      Since you're using <strong>Mozilla Firefox</strong>, open the Web console with
+      Поскольку вы используете <strong>Mozilla Firefox</strong>, oоткройте консоль JavaScript с помощью
       <span class="case is-windows is-linux"><kbd class="key">Ctrl</kbd><kbd class="plus">+</kbd><kbd class="key">Shift</kbd><kbd class="plus">+</kbd><kbd class="key">K</kbd> or <kbd class="key">F12</kbd></span>
-      <span class="case is-mac"><kbd class="key">вЊҐ</kbd><kbd class="plus">+</kbd><kbd class="key">вЊ</kbd><kbd class="plus">+</kbd><kbd class="key">K</kbd></span>
+      <span class="case is-mac"><kbd class="key">⌥</kbd><kbd class="plus">+</kbd><kbd class="key">⌘</kbd><kbd class="plus">+</kbd><kbd class="key">K</kbd></span>
     </div>
 
     <div class="case is-edge not-mobile not-tablet">
-      Since you're using <strong>Microsoft Edge</strong>, open the JavaScript console with
+      Поскольку вы используете <strong>Microsoft Edge</strong>, откройте консоль JavaScript с помощью
       <span class="case is-windows"><kbd class="key">F12</kbd></span>
     </div>
 
     <div class="case is-opera not-mobile not-tablet">
-      Since you're using <strong>Opera</strong>, open the JavaScript console with
+      Поскольку вы используете <strong>Opera</strong>, откройте консоль JavaScript с помощью
       <span class="case is-windows is-linux"><kbd class="key">Ctrl</kbd><kbd class="plus">+</kbd><kbd class="key">Shift</kbd><kbd class="plus">+</kbd><kbd class="key">I</kbd></span>
-      <span class="case is-mac"><kbd class="key">вЊҐ</kbd><kbd class="plus">+</kbd><kbd class="key">вЊ</kbd><kbd class="plus">+</kbd><kbd class="key">I</kbd></span>
+      <span class="case is-mac"><kbd class="key">⌥</kbd><kbd class="plus">+</kbd><kbd class="key">⌘</kbd><kbd class="plus">+</kbd><kbd class="key">I</kbd></span>
     </div>
 
     <div class="case is-safari not-mobile not-tablet">
-      <p>Since you're using <strong>Apple Safari</strong>:</p>
+      <p>Поскольку вы используете <strong>Apple Safari</strong>:</p>
       <ol>
-        <li>Go to <strong>Preferences</strong> with <kbd class="key">вЊ</kbd><kbd class="plus">+</kbd><kbd class="key">,</kbd></li>
-        <li>Go to the <strong>Advanced</strong> tab</li>
-        <li>Enable <strong>Show Develop menu in menu bar</strong></li>
-        <li>Open the JavaScript console <kbd class="key">вЊҐ</kbd><kbd class="plus">+</kbd><kbd class="key">вЊ</kbd><kbd class="plus">+</kbd><kbd class="key">C</kbd></li>
+        <li>Перейдите в <strong>Настройки</strong> с помощью <kbd class="key">⌘</kbd><kbd class="plus">+</kbd><kbd class="key">,</kbd></li>
+        <li>Перейдите на вкладку <strong>Дополнительно</strong></li>
+        <li>Включить <strong>Показать меню «Разработка» в строке меню</strong></li>
+        <li>Откройте консоль JavaScript <kbd class="key">⌥</kbd><kbd class="plus">+</kbd><kbd class="key">⌘</kbd><kbd class="plus">+</kbd><kbd class="key">C</kbd></li>
       </ol>
     </div>
 
-    <p>Let's see if it works!</p>
-    <p>In the console, type (or paste) the following, and press <kbd class="key">Enter</kbd></p>
+    <p>Посмотрим, сработает ли это!</p>
+    <p>В консоли введите (или вставьте) следующее и нажмите <kbd class="key">Enter</kbd></p>
   </div>
 
   
@@ -191,14 +193,14 @@
   </div>
   
     <a class="snippet-copy not-mobile not-tablet">
-      Copy to clipboard
+      Скопировать в буфер обмена
     </a>
   
 </div>
 
 
 <div class="run-snippet case is-mobile is-tablet">
-  <a class="button">Run snippet</a>
+  <a class="button">Выполнить фрагмент</a>
 </div>
 
 
@@ -216,12 +218,12 @@
     </g>
   </svg>
 </div>
- Great job!</h2>
+ Отличная работа!</h2>
 
 
-    <p>You've just used <code>alert()</code>, a native <strong>JavaScript function</strong> that comes with every browser.</p>
+    <p>Вы только что использовали <code> alert()</code>, встроенную <strong> функцию JavaScript </strong>, которая поставляется с каждым браузером.</p>
 
-    <p>But what have you <a onclick="showStep(3);">done exactly</a>?</p></div>
+    <p> Но что вы <a onclick="showStep(3);"> сделали точно </a>? </p> </div>
   </div>
 </div>
 
@@ -229,36 +231,38 @@
 <div id="step3" class="step">
   <div class="content">
     <h2>Functions <span class="stamp is-concept">concept</span></h2>
-    <p>You've <strong>called</strong> the <code>alert()</code> <em>function</em> with the <code>'Hello&nbsp;World!'</code> <em>parameter</em>.</p>
+    <p> У вас <strong> вызвана </strong> <em>функция</em> <code> alert()</code> <em>с параметром</em> <code> 'Hello World!' </code></p>
 
-    <p>You have basically done 4 things:</p>
+    <p>Вы в основном сделали 4 вещи:</p>
 
     <div class="stabs">
       <div class="stab">
-        <div class="stab-label">you typed the <strong>name</strong> of the function</div>
+        <div class="stab-label">вы набрали <strong>имя</strong> функции</div>
         <div class="stab-code"><code class="stabilo"><span class="is-blue">alert</span>('Hello World!')</code></div>
       </div>
       <div class="stab">
-        <div class="stab-label">you opened a <strong>parenthesis</strong></div>
+        <div class="stab-label">вы открыли <strong>скобку</strong></div>
         <div class="stab-code"><code class="stabilo">alert<span class="is-black">(</span>'Hello World!')</code></div>
       </div>
       <div class="stab">
-        <div class="stab-label">you typed a <strong>parameter</strong></div>
+        <div class="stab-label">вы набрали <strong>параметр</strong></div>
         <div class="stab-code"><code class="stabilo">alert(<span class="is-green">'Hello World!'</span>)</code></div>
       </div>
       <div class="stab">
-        <div class="stab-label">you <strong>closed</strong> the parenthesis</div>
+        <div class="stab-label">вы <strong>закрылы</strong> скобку</div>
         <div class="stab-code"><code class="stabilo">alert('Hello World!'<span class="is-black">)</span></code></div>
       </div>
     </div>
 
-    <p>Sometimes, there's no parameter.<br>
-    Sometimes, there's multiple parameters.<br>
-    Most of them are required, but some of them can be optional.</p>
+    <p>
+      Иногда параметр отсутствует. <br>
+      Иногда есть несколько параметров. <br>
+      Большинство из них необходимы, но некоторые из них могут быть необязательными.
+    </p>
 
-    <p>In this case, <code>alert()</code> requires only one parameter.</p>
+    <p>В этом случае <code> alert()</code> требуется только один параметр. </p>
 
-    <p>But what <a onclick="showStep(4);">type of parameter</a> is that?</p>
+    <p>Но что такое <a onclick="showStep(4);">тип параметра </a>? </p>
   </div>
 </div>
 
@@ -267,19 +271,19 @@
   <div class="content">
     <h2>Strings <span class="stamp is-type">type</span></h2>
 
-    <p>When you handle text, you're using <strong>strings</strong>, which are a series of <em>characters</em>. In our case, we used a series of <strong>12 characters</strong>: <code>Hello World!</code>. This includes all lowercase and uppercase letters, the space, and the exclamation point.</p>
+    <p> Когда вы обрабатываете текст, вы используете <strong> строки </strong>, которые представляют собой последовательность  <em>символов</em>. В нашем случае мы использовали серию <strong> 12 символов </strong>: <code> Hello World!</code>. Это включает в себя все строчные и прописные буквы, пробел и восклицательный знак. </p>
 
-    <p>To define where the string <em>starts</em> and where it <em>ends</em>, you need to wrap it in <strong>quotes</strong> (either single <code>'</code> or double <code>"</code>).</p>
+    <p> Чтобы определить, где строка <em> начинается </em> и где она <em> заканчивается </em>, вам нужно обернуть ее в <strong> кавычки </strong> (одна <code>'</code> или две <code>"</code>). </p>
 
-    <p>When you defined the <code>'Hello World!'</code> string:</p>
+    <p>Когда вы определили строку <code>'Hello World!'</code>: </p>
 
     <ol>
-      <li>you typed a single <strong>quote</strong></li>
-      <li>you typed the <strong>12 characters</strong></li>
-      <li>you typed another single <strong>quote</strong></li>
+      <li> вы набрали одну <strong> ковычку </strong></li>
+      <li> вы набрали <strong> 12 символов </strong></li>
+      <li> вы набрали еще одну <strong> ковычку </strong></li>
     </ol>
 
-    <p>What if you wanted to deal with <a onclick="showStep(5);">numbers instead</a>?</p>
+    <p>Что, если вы хотите иметь дело с <a onclick="showStep(5);">цифрами</a>?</p>
   </div>
 </div>
 
@@ -288,11 +292,11 @@
   <div class="content">
     <h2>Numbers <span class="stamp is-type">type</span></h2>
 
-    <p>Like any other programming language, JavaScript can handle <strong>numbers</strong>.</p>
+    <p>Как и любой другой язык программирования, JavaScript может обрабатывать <strong>цифры</strong>.</p>
 
-    <p>These numbers can be big or small, with or without decimals, combined through numeric operationsвЂ¦</p>
+    <p>Эти числа могут быть большими или малыми, с или без десятичных знаков, объединенными посредством числовых операций...</p>
 
-    <p>Type or paste the following snippet in your console:</p>
+    <p>Введите или вставьте следующий фрагмент в консоль:</p>
   </div>
 
   
@@ -304,14 +308,14 @@
   </div>
   
     <a class="snippet-copy not-mobile not-tablet">
-      Copy to clipboard
+      Скопировать в буфер обмена
     </a>
   
 </div>
 
 
 <div class="run-snippet case is-mobile is-tablet">
-  <a class="button">Run snippet</a>
+  <a class="button">Выполнить фрагмент</a>
 </div>
 
 
@@ -329,31 +333,31 @@
     </g>
   </svg>
 </div>
- Perfect!</h2>
+ Отлично!</h2>
 
 
 
-    <p>Notice a few things:</p>
+    <p>Обратите внимание на несколько вещей:</p>
 
     <ul>
-      <li>you're using the <code>+</code> and <code>*</code> <strong>operators</strong></li>
-      <li>the <strong>mathematical order</strong> is respected: first <code>5 * 3</code> is calculated, then <code>9 + 15</code></li>
-      <li>the <strong>spaces</strong> around the <code>*</code> symbol don't affect the output ; they're just here to help us (humans!) <em>read</em> the code.</li>
+      <li>вы используете<strong> операторы </strong><code>+</code> и <code>*</code></li>
+      <li>соблюдается <strong>математический порядок</strong>: сначала вычисляется <code>5 * 3</code>, затем <code>9 + 15</code></li>
+      <li><strong>пробелы</strong> вокруг символа <code>*</code> не влияют на вывод; они просто здесь, чтобы помочь нам (людям!) <em>прочитать</em> код.</li>
     </ul>
 
-    <p>You can find numbers in <a onclick="showStep(7);">lots of places</a>.</p>
+    <p>Вы можете найти числа во <a onclick="showStep(7);">многих местах</a>.</p>
   </div>
 </div>
 
 <!-- 07 -->
 <div id="step7" class="step">
   <div class="content">
-    <h2>Browser dimensions <span class="stamp is-info">info</span></h2>
-    <p>Numbers are everywhere! Especially in a browser.</p>
+    <h2>Размеры браузера <span class="stamp is-info">info</span></h2>
+    <p>Цифры повсюду! Особенно в браузере.</p>
 
-    <p>For example, your current browser window has a certain <strong>width</strong> that you can access with JavaScript.</p>
+    <p>Например, ваше текущее окно браузера имеет определенную <strong>ширину</strong>, с которой вы можете получить доступ с помощью JavaScript.</p>
 
-    <p>Type the following:</p>
+    <p>Введите следующее:</p>
 
     
     <div class="snippet">
@@ -364,14 +368,14 @@
   </div>
   
     <a class="snippet-copy not-mobile not-tablet">
-      Copy to clipboard
+      Скопировать в буфер обмена
     </a>
   
 </div>
 
 
 <div class="run-snippet case is-mobile is-tablet">
-  <a class="button">Run snippet</a>
+  <a class="button">Выполнить фрагмент</a>
 </div>
 
 
@@ -390,19 +394,19 @@
     </g>
   </svg>
 </div>
- Wonderful!</h2>
+ Замечательно!</h2>
 
 
 
     <p>
-      This means your browser's window is <strong id="browserWidth">1680</strong> pixels wide.
+      Это означает, что окно вашего браузера <strong id="browserWidth">0</strong> пикселей в ширину.
     </p>
 
     <p>
-      As you would have guessed, <code>window.innerHeight</code> exists as well, as does <code>window.scrollY</code>, which gives you the current scroll position.
+      Как вы уже догадались, <code>window.innerHeight</code> также существует, как и <code>window.scrollY</code>, который дает вам текущую позицию прокрутки.
     </p>
 
-    <p>But what is <code>window</code> <a onclick="showStep(9);">exactly</a>?</p>
+    <p>Но что такое <code>window</code> <a onclick="showStep(9);">точно</a>?</p>
   </div>
 </div>
 
@@ -412,24 +416,24 @@
     <h2>Objects <span class="stamp is-type">type</span></h2>
 
     <p>
-      <code>window</code> is a JavaScript <strong>object</strong>.
+      <code>window</code> - это JavaScript <strong>объект</strong>.
     </p>
     <p>
-      <code>innerWidth</code> is a <strong>property</strong> of the <code>window</code> object.
+      <code>innerWidth</code> - это <strong>свойство</strong> объекта <code>window</code>.
       <br>
-      To access this property, you used a dot <code>.</code> to specify you wanted the <code>innerWidth</code> that exists <em>within</em> the <code>window</code> object.
+      Чтобы получить доступ к этому свойству, вы использовали точку <code>.</Code>, чтобы указать, что вам нужен <code>innerWidth</code>, который существует <em>внутри</em> объекта <code>window</code>
     </p>
 
-    <p>The JavaScript object is basically a <strong>type</strong> that contains other things.</p>
-    <p>For example, <code>window</code> also has:</p>
+    <p>Объект JavaScript в основном представляет собой <strong>тип</strong>, который содержит другие вещи.</p>
+    <p>Например, <code>window</code> также имеет: </ p>
 
     <ul>
-      <li><code>window.origin</code> which is a string</li>
-      <li><code>window.scrollY</code> which is a number</li>
-      <li><code>window.location</code> which is an object</li>
+      <li><code>window.origin</code>, который является строкой</li>
+      <li><code>window.scrollY</code>, который является числом </li>
+      <li><code>window.location</code>, который является объектом</li>
     </ul>
 
-    <p>If <code>window</code> is an object that contains <code>location</code> which is another object, this means that <a onclick="showStep(10);">JavaScript objects support</a>вЂ¦</p>
+    <p>Если <code>window</code> - это объект, содержащий <code>location</code>, который является другим объектом, это означает, что <a onclick="showStep(10);">поддержка объектов JavaScript</a>...</p>
   </div>
 </div>
 
@@ -438,13 +442,12 @@
   <div class="content">
     <h2>Nesting <span class="stamp is-info">info</span></h2>
 
-    <p>A property of an object can be an object itself (inception!).</p>
+    <p>Свойством объекта может быть сам объект (начало!).</p>
 
-    <p>Since <code>window.location</code> is an object too, it has properties of its own. To access these properties, just add another dot <code>.</code> and the name of the property.</p>
+    <p>Так как <code>window.location</code> тоже объект, он имеет свои собственные свойства. Чтобы получить доступ к этим свойствам, просто добавьте еще одну точку <code>.</code> и имя свойства.</p>
 
-    <p>For example, the <code>href</code> property exists:</p>
+    <p>Например, свойство <code>href</code> существует:</p>
 
-    
     <div class="snippet">
   <div class="snippet-contents">
     <div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">alert</span><span class="p">(</span><span class="nb">window</span><span class="p">.</span><span class="nx">location</span><span class="p">.</span><span class="nx">href</span><span class="p">)</span>
@@ -453,14 +456,14 @@
   </div>
   
     <a class="snippet-copy not-mobile not-tablet">
-      Copy to clipboard
+      Скопировать в буфер обмена
     </a>
-  
+
 </div>
 
 
 <div class="run-snippet case is-mobile is-tablet">
-  <a class="button">Run snippet</a>
+  <a class="button">Выполнить фрагмент</a>
 </div>
 
 
@@ -479,26 +482,26 @@
     </g>
   </svg>
 </div>
- Awesome!</h2>
+ Потрясающие!</h2>
 
 
 
-    <p>You just displayed the <strong>full URL</strong> of this webpage. This is because:</p>
+    <p>Вы только что указали <strong>полный URL</strong> этой веб-страницы. Это происходит потому, что:</p>
 
     <ul>
-      <li><code>window</code> is an object</li>
-      <li><code>location</code> is an object</li>
-      <li><code>href</code> is a string</li>
+      <li><code>window</code> является объектом</li>
+      <li><code>location</code> является объектом</li>
+      <li><code>href</code> является строкой</li>
     </ul>
 
     <p>
-      There's no limit to how deeply objects can be nested.
+      Нет предела тому, насколько глубоко могут быть вложены объекты.
       <br>
-      There's also no limit to the number of properties an object can have.
+      Также нет ограничений на количество свойств, которые может иметь объект.
     </p>
 
     <p>
-      As we've seen, the properties of an object can be of any type: strings, numbers, objects, and even functions. In the latter case, it's <a onclick="showStep(12);">calledвЂ¦</a>
+      Как мы видели, свойства объекта могут быть любого типа: строки, числа, объекты и даже функции. В последнем случае это <a onclick="showStep(12);">называется...</a>
     </p>
   </div>
 </div>
@@ -508,10 +511,9 @@
   <div class="content">
     <h2>Methods <span class="stamp is-info">info</span></h2>
 
-    <p>When an object's <strong>property</strong> is a <strong>function</strong>, it's called a <strong>method</strong> instead.</p>
+    <p>Если свойство <strong>объекта</strong> является <strong>функцией</strong>, то оно называется <strong>методом</strong>.</p>
 
-    <p>Actually, the <code>alert()</code> function we've been using so far is a method of the <code>window</code> object!</p>
-
+    <p>На самом деле, функция <code>alert()</code>, которую мы использовали до сих пор, - это метод объекта <code>window</code>!</p>
     
     <div class="snippet">
   <div class="snippet-contents">
@@ -521,14 +523,14 @@
   </div>
   
     <a class="snippet-copy not-mobile not-tablet">
-      Copy to clipboard
+        Скопировать в буфер обмена
     </a>
   
 </div>
 
 
 <div class="run-snippet case is-mobile is-tablet">
-  <a class="button">Run snippet</a>
+  <a class="button">Выполнить фрагмент</a>
 </div>
 
 
@@ -547,29 +549,30 @@
     </g>
   </svg>
 </div>
- OMG indeed!</h2>
+ OMG действительно!</h2>
 
 
 
     <p>
-      Since <code>window</code> is the top-level object in the browser, you can access all its properties and methods directly.
-    </p>
+      Поскольку <code>window</code> является объектом верхнего уровня в браузере, вы можете напрямую обращаться ко всем его свойствам и методам.
+    </p>
 
-    <p>
-      That's why typing <code>location.href</code> is the same as typing <code>window.location.href</code>.
-    </p>
+    <p>
+      Вот почему ввод <code>location.href</code> совпадает с вводом <code>window.location.href</code>.
+    </p>
 
-    <p>
-      Or why <code>alert()</code> is equivalent to <code>window.alert()</code>.
-    </p>
+    <p>
+      Или почему <code>alert()</code> эквивалентен <code>window.alert()</code>.
+    </p>
 
-    <p>
-      Objects are useful for grouping several properties under the same name and scope, and defining a <strong>hierarchy</strong> in the data. It's like a tree, where each branch can have other smaller branches.
-    </p>
+    <p>
+      Объекты полезны для группировки нескольких свойств под тем же именем и областью и определения <strong>иерархии</strong> в данных. Это похоже на дерево, где каждая ветка может иметь другие более мелкие ветви.
+    </p>
 
-    <p>
-      But what if you only needed a <a onclick="showStep(14);">list of things</a>вЂ¦
-    </p>
+    <p>
+      Но что, если вам нужен только <a onclick="showStep(14);">список элементов</a> ...
+    </p>
+
   </div>
 </div>
 
@@ -578,9 +581,9 @@
   <div class="content">
     <h2>Arrays <span class="stamp is-type">type</span></h2>
 
-    <p>A JavaScript <strong>array</strong> is a type that can contain multiple values, as if they were in an ordered list.</p>
+    <p><strong>Массив</strong> JavaScript - это тип, который может содержать несколько значений, как если бы они были в упорядоченном списке.</p>
 
-    <p>Let's pass an array of <strong>3 strings</strong> to the <code>alert()</code> function:</p>
+    <p>Давайте передадим массив <strong>3 строки</strong> в функцию <code>alert()</code>:</p>
     
     <div class="snippet">
   <div class="snippet-contents">
@@ -590,14 +593,14 @@
   </div>
   
     <a class="snippet-copy not-mobile not-tablet">
-      Copy to clipboard
+      Скопировать в буфер обмена
     </a>
   
 </div>
 
 
 <div class="run-snippet case is-mobile is-tablet">
-  <a class="button">Run snippet</a>
+  <a class="button">Выполнить фрагмент</a>
 </div>
 
 
@@ -616,47 +619,47 @@
     </g>
   </svg>
 </div>
- Exactly!</h2>
+ В точку!</h2>
 
 
 
     <p>
-      You already know the syntax for calling the <code>alert</code> function: <code>alert(parameter)</code>.
+      Вы уже знаете синтаксис для вызова функции <code>alert</code>: <code>alert(параметр)</code>.
     </p>
 
     <p>
-      In this case, the parameter is an array with 3 items that you have defined like this:
+      В этом случае параметр представляет собой массив с тремя элементами, которые вы определили следующим образом:
     </p>
 
     <div class="stabs">
       <div class="stab">
-        <div class="stab-label">you opened a <strong>square bracket</strong></div>
+        <div class="stab-label">вы открыли <strong>квадратную скобку</strong></div>
         <div class="stab-code"><code class="stabilo"><span class="is-black">[</span>'What', 'is', 'up']</code></div>
       </div>
       <div class="stab">
-        <div class="stab-label">you typed the <strong>first item</strong> of the array, a string</div>
+        <div class="stab-label">вы набрали <strong>первый элемент</strong> массива, строку</div>
         <div class="stab-code"><code class="stabilo">[<span class="is-green">'What'</span>, 'is', 'up']</code></div>
       </div>
       <div class="stab">
-        <div class="stab-label">you typed a <strong>comma</strong> to separate the items</div>
+        <div class="stab-label">вы набрали <strong>запятую </strong> для разделения элементов</div>
         <div class="stab-code"><code class="stabilo">['What'<span class="is-black">,</span> 'is', 'up']</code></div>
       </div>
       <div class="stab">
-        <div class="stab-label">you added <strong>two other items</strong> to the list</div>
+        <div class="stab-label">вы добавили в список <strong>два других элемента</strong>.</div>
         <div class="stab-code"><code class="stabilo">['What', <span class="is-green">'is'</span><span class="is-black">, </span><span class="is-green">'up'</span>]</code></div>
       </div>
       <div class="stab">
-        <div class="stab-label">you <strong>closed</strong> the square bracket</div>
+        <div class="stab-label">вы <strong>закрыли</strong> квадратную скобку</div>
         <div class="stab-code"><code class="stabilo">['What', 'is', 'up'<span class="is-black">]</span></code></div>
       </div>
     </div>
 
     <p>
-      An array can contain any <strong>type</strong> of values: strings, numbers, objects, other arrays, and <em>more</em>вЂ¦
+      Массив может содержать <strong>любые</strong> значения: строки, числа, объекты, другие массивы и <em>больше</em>...
     </p>
 
     <p>
-      Try out this snippet:
+      Попробуйте этот фрагмент:
     </p>
 
     
@@ -668,14 +671,14 @@
   </div>
   
     <a class="snippet-copy not-mobile not-tablet">
-      Copy to clipboard
+      Скопировать в буфер обмена
     </a>
   
 </div>
 
 
 <div class="run-snippet case is-mobile is-tablet">
-  <a class="button">Run snippet</a>
+  <a class="button">Выполнить фрагмент</a>
 </div>
 
 
@@ -694,19 +697,19 @@
     </g>
   </svg>
 </div>
- True!</h2>
+ Правда!</h2>
 
 
 
     <p>
-      The first item <code>2 + 5</code> is a number, while the second one <code>'samurai'</code> is a string.
+      Первый элемент <code>2 + 5</code> - это номер, а второй <code>'samurai'</code> - это строка.
     </p>
 
     <p>
-      What about the <strong>third parameter</strong>? It's not a string because it's not wrapped in quotes, and it's not a number either.
+      Как насчет <strong>третьего параметра</strong>? Это не строка, потому что она не заключена в кавычки, и это тоже не число.
     </p>
     <p>
-      So <a onclick="showStep(17);">what is it</a>?
+      Так <a onclick="showStep(17);">что это</a>?
     </p>
   </div>
 </div>
@@ -716,14 +719,14 @@
   <div class="content">
     <h2>Booleans <span class="stamp is-type">type</span></h2>
 
-    <p>While strings and numbers have an infinite amount of <em>possible</em> values, a <strong>boolean</strong> can only be either <code>true</code> or <code>false</code>.</p>
+    <p>В то время как строки и числа имеют бесконечное количество <em>возможных</em> значений, <strong>boolean</strong> может быть либо <code>true</code>, либо <code>false</code>.</p>
 
     <p>
-      By combining the <code>alert()</code> function and the 3-item array on a <em>single</em> line, it makes our code less readable.
+      Объединив функцию <code>alert()</code> и 3-й элемент массива в <em>одной</em> строке, это делает наш код менее читаемым.
     </p>
 
     <p>
-      What if we could split the two by moving the array onto <a onclick="showStep(18);">its own line</a>?
+      Что, если бы мы могли разбить их, переместив массив <a onclick="showStep(18);">на свою линию</a>?
     </p>
   </div>
 </div>
@@ -734,11 +737,11 @@
     <h2>Variables <span class="stamp is-concept">concept</span></h2>
 
     <p>
-      We can move the array into a <strong>variable</strong>.
+      Мы можем переместить массив в <strong>переменную</strong>.
     </p>
 
     <p>
-      A variable is a <strong>container</strong> that stores a certain <strong>value</strong>. It has a <strong>name</strong> (so you can identify and re-use it), and it has a <strong>value</strong> (so you can update it later on).
+      Переменная - это <strong>контейнер</strong>, который хранит определенное <strong>значение</strong>. Он имеет <strong>имя</strong> (поэтому вы можете идентифицировать и повторно использовать его), и оно имеет <strong>значение</strong> (так что вы можете обновить его позже).
     </p>
 
     
@@ -756,50 +759,50 @@
 
     <ul>
       <li>
-        <code>my_things</code> is the <strong>name</strong> of the variable
+        <code>my_things</code> это <strong>имя</strong> переменной
       </li>
       <li>
-        <code>[2 + 5, 'samurai', true]</code> is the <strong>value</strong> of the variable
+        <code>[2 + 5, 'samurai', true]</code> - это <strong>значение</strong> переменной
       </li>
     </ul>
 
     <p>
-      Here's the breakdown:
+      Вот разбивка:
     </p>
 
     <div class="stabs is-vertical">
       <div class="stab">
-        <div class="stab-label">you typed the <strong>keyword</strong> <code>var</code></div>
+        <div class="stab-label">вы набрали <strong>ключевое слово</strong> <code>var</code></div>
         <div class="stab-code"><code class="stabilo"><span class="is-purple">var</span> my_things = [2 + 5, 'samurai', true];</code></div>
       </div>
       <div class="stab">
-        <div class="stab-label">you typed the <strong>name</strong> of the variable</div>
+        <div class="stab-label">вы набрали <strong>имя</strong> переменной</div>
         <div class="stab-code"><code class="stabilo">var <span class="is-blue">my_things</span> = [2 + 5, 'samurai', true];</code></div>
       </div>
       <div class="stab">
-        <div class="stab-label">you typed the <strong>assignment</strong> operator <code>=</code></div>
+        <div class="stab-label">вы набрали оператор <strong>присваивания</strong> <code>=</code></div>
         <div class="stab-code"><code class="stabilo">var my_things <span class="is-purple">=</span> [2 + 5, 'samurai', true];</code></div>
       </div>
       <div class="stab">
-        <div class="stab-label">you typed the <strong>array</strong></div>
+        <div class="stab-label">вы набрали <strong>массив</strong></div>
         <div class="stab-code"><code class="stabilo">var my_things = <span class="is-black">[</span><span class="is-red">2</span><span class="is-purple"> + </span><span class="is-red">5</span><span class="is-black">, </span><span class="is-green">'samurai'</span><span class="is-black">, </span><span class="is-purple">true</span><span class="is-black">]</span>;</code></div>
       </div>
       <div class="stab">
-        <div class="stab-label">you typed a <strong>semicolon</strong> to end the statement</div>
+        <div class="stab-label">вы набрали <strong>точку с запятой</strong>, чтобы закончить утверждение</div>
         <div class="stab-code"><code class="stabilo">var my_things = [2 + 5, 'samurai', true]<span class="is-black">;</span></code></div>
       </div>
     </div>
 
     <p>
-      This means that <code>my_things</code> is equal to <code>[2 + 5, 'samurai', true]</code>.
+      Это означает, что <code>my_things</code> равен <code>[2 + 5, 'samurai', true]</code>.
     </p>
 
     <p>
-      We can now reinstate the <code>alert</code> function:
+      Теперь мы можем восстановить функцию <code>alert</code>
     </p>
 
     <p>
-      Since we now have <em>two statements</em>, we need to separate them with a <strong>semicolon</strong> <code>;</code> in order to know where one ends and the next one begins.
+      Поскольку теперь мы имеем <em>два оператора</em>, нам нужно разделить их на <strong>точку с запятой</strong> <code>;</code>, чтобы узнать, где они заканчиваются, и начинается следующий.
     </p>
 
     
@@ -812,14 +815,14 @@
   </div>
   
     <a class="snippet-copy not-mobile not-tablet">
-      Copy to clipboard
+      Скопировать в буфер обмена
     </a>
   
 </div>
 
 
 <div class="run-snippet case is-mobile is-tablet">
-  <a class="button">Run snippet</a>
+  <a class="button">Выполнить фрагмент</a>
 </div>
 
 
@@ -838,24 +841,24 @@
     </g>
   </svg>
 </div>
- Wonderful!</h2>
+ Замечательно!</h2>
 
 
 
     <p>
-      By storing our array into a variable, we managed to make our code more <strong>readable</strong>.
+      Сохраняя наш массив в переменной, нам удалось сделать наш код более <strong>читабельным</strong>.
     </p>
 
     <p>
-      Although this variables contains a list of several things, we might want to deal with only a <strong>single</strong> item of the list.
+      Хотя эти переменные содержат массив из нескольких элементов, мы можем иметь дело только с <strong>одним</strong> элементом массива.
     </p>
 
     <p>
-      To access a <em>specific item</em> of an array, you first need to know its <strong>index</strong> (or position) within the array. You then need to wrap this index into <strong>square brackets</strong>.
+      Чтобы получить доступ к <em>конкретному элементу</em> массива, вам сначала нужно знать его <strong>индекс</strong> (или позицию) в массиве. Затем вам нужно обернуть этот индекс в <strong>квадратные скобки</strong>.
     </p>
 
     <p>
-      Can you guess which item is gonna be displayed?
+      Можете ли вы догадаться, какой предмет будет отображаться?
     </p>
 
     
@@ -868,14 +871,14 @@
   </div>
   
     <a class="snippet-copy not-mobile not-tablet">
-      Copy to clipboard
+      Скопировать в буфер обмена
     </a>
   
 </div>
 
 
 <div class="run-snippet case is-mobile is-tablet">
-  <a class="button">Run snippet</a>
+  <a class="button">Выполнить фрагмент</a>
 </div>
 
 
@@ -894,39 +897,39 @@
     </g>
   </svg>
 </div>
- You guessed it!</h2>
+ Ты угадал!</h2>
 
 
 
     <p>
-      It's the <strong>second item</strong> that showed up! In programming, indexes start at zero <code>0</code>.
+      Появился <strong>второй элемент</strong>. В программировании индексы начинаются с нуля <code>0</code>.
     </p>
 
     <div class="stabs is-vertical">
       <div class="stab">
-        <div class="stab-label">you typed the <strong>name</strong> of the array</div>
+        <div class="stab-label">вы набрали <strong>имя</strong> массива</div>
         <div class="stab-code"><code class="stabilo"><span class="is-blue">my_things</span>[1]</code></div>
       </div>
       <div class="stab">
-        <div class="stab-label">you opened a <strong>square bracket</strong></div>
+        <div class="stab-label">вы открыли <strong>квадратную скобку</strong></div>
         <div class="stab-code"><code class="stabilo">my_things<span class="is-black">[</span>1]</code></div>
       </div>
       <div class="stab">
-        <div class="stab-label">you typed the <strong>index</strong> of the item you wanted to access</div>
+        <div class="stab-label">вы набрали <strong>индекс</strong> элемента, к которому вы хотели получить доступ</div>
         <div class="stab-code"><code class="stabilo">my_things[<span class="is-red">1</span>]</code></div>
       </div>
       <div class="stab">
-        <div class="stab-label">you <strong>closed</strong> the square bracket</div>
+        <div class="stab-label">вы <strong>закрыли</strong> квадратную скобку</div>
         <div class="stab-code"><code class="stabilo">my_things[1<span class="is-black">]</span></code></div>
       </div>
     </div>
 
     <p>
-      It turns out that variables are <strong>objects</strong> too! Which means that variables also have <strong>properties</strong> and <strong>methods</strong>.
+      Оказывается, что переменные тоже <strong>объекты</strong> ! Это означает, что переменные также имеют <strong>свойства</strong> и <strong>методы</strong>.
     </p>
 
     <p>
-      For example, <code>my_things</code> has a property called <code>length</code>:
+      Например, <code>my_things</code> имеет свойство <code>length</code>:
     </p>
 
     
@@ -939,14 +942,14 @@
   </div>
   
     <a class="snippet-copy not-mobile not-tablet">
-      Copy to clipboard
+      Скопировать в буфер обмена
     </a>
   
 </div>
 
 
 <div class="run-snippet case is-mobile is-tablet">
-  <a class="button">Run snippet</a>
+  <a class="button">Выполнить фрагмент</a>
 </div>
 
 
@@ -965,16 +968,16 @@
     </g>
   </svg>
 </div>
- That's right!</h2>
+ Это верно!</h2>
 
 
 
     <p>
-      The array has <strong>3</strong> items. You'll see that if you add or remove items in <code>my_things</code>, this <code>length</code> value will change accordingly.
+      Массив имеет <strong>3</strong> элемента. Вы увидите, что если вы добавите или удалите элементы в <code>my_things</code>, то значение <code>length</code> изменится соответствующим образом.
     </p>
 
     <p>
-      While readability and properties are useful, the main point of a variable is that it's <strong>editable</strong>: you can change the value afterwards!
+      Хотя читабельность и свойства полезны, основной точкой переменной является то, что она <strong>редактируется</strong>: вы можете впоследствии изменить значение!
     </p>
 
     
@@ -989,14 +992,14 @@
   </div>
   
     <a class="snippet-copy not-mobile not-tablet">
-      Copy to clipboard
+      Скопировать в буфер обмена
     </a>
   
 </div>
 
 
 <div class="run-snippet case is-mobile is-tablet">
-  <a class="button">Run snippet</a>
+  <a class="button">Выполнить фрагмент</a>
 </div>
 
 
@@ -1015,24 +1018,24 @@
     </g>
   </svg>
 </div>
- Yep!</h2>
+ Ага!</h2>
 
 
 
     <p>
-      Two alert boxes have been displayed, but with different values! That's because between the first call and the second one, the value of <code>my_things</code> has been <strong>updated</strong>: a fourth item, the string <code>'LOVE'</code>, was added.
+      Появились два окна оповещения, но с разными значениями! Это связано с тем, что между первым вызовом и вторым значением <code>my_things</code> было <strong>обновлено</strong>: четвертый элемент, строка <code>'LOVE'</code>, был добавлен.
     </p>
 
     <p>
-      Note that the second time we're assigning a value to <code>my_things</code>, we're <strong>not</strong> using the <code>var</code> keyword: it's because we're editing the <code>my_things</code> variable defined two lines above.
+      Обратите внимание, что во второй раз, когда мы присваиваем значение <code>my_things</code>, мы <strong>не</strong>, используя ключевое слово <code>var </code>: это потому, что мы редактируем <code>my_things</code>. переменная определена двумя строками выше.
     </p>
 
     <p>
-      <strong>You only use the keyword <code>var</code> when you're <em>creating</em> a new variable</strong>, not when you're <em>editing</em> one.
+      <strong>Вы используете ключевое слово <code>var</code>, когда <em>создаете</em> новую переменную</strong>, а не когда вы <em>редактируете</em>
     </p>
 
     <p>
-      Do you remember I told you variables had <strong>methods</strong> too (since they're objects)? Another way to edit an array's value is by using the <code>push()</code> method:
+      Помните ли вы, что я сказал вам, что переменные имеют <strong>методы</strong> тоже (поскольку они являются объектами)? Другим способом редактирования значения массива является метод <code>push()</code>:
     </p>
 
     
@@ -1047,14 +1050,14 @@
   </div>
   
     <a class="snippet-copy not-mobile not-tablet">
-      Copy to clipboard
+      Скопировать в буфер обмена
     </a>
   
 </div>
 
 
 <div class="run-snippet case is-mobile is-tablet">
-  <a class="button">Run snippet</a>
+  <a class="button">Выполнить фрагмент</a>
 </div>
 
 
@@ -1073,16 +1076,16 @@
     </g>
   </svg>
 </div>
- Fantastic!</h2>
+ Фантастика!</h2>
 
 
 
     <p>
-      The <code>my_things</code> array ends up with <strong>4</strong> items.
+      Массив <code>my_things</code> заканчивается на <strong>4</strong> элемента.
     </p>
 
     <p>
-      While the <code>push()</code> method altered the array, others simply <strong>return</strong> a value:
+      В то время как метод <code>push()</code> изменил массив, другие просто <strong>возвращают</strong> значение
     </p>
 
     
@@ -1095,14 +1098,14 @@
   </div>
   
     <a class="snippet-copy not-mobile not-tablet">
-      Copy to clipboard
+      Скопировать в буфер обмена
     </a>
   
 </div>
 
 
 <div class="run-snippet case is-mobile is-tablet">
-  <a class="button">Run snippet</a>
+  <a class="button">Выполнить фрагмент</a>
 </div>
 
 
@@ -1121,20 +1124,20 @@
     </g>
   </svg>
 </div>
- No ninja here!</h2>
+ Нет ниндзя здесь!</h2>
 
 
 
     <p>
-      The <code>includes()</code> method checked if the string <code>'ninja'</code> was present in the array. Since it wasn't, the method returned <code>false</code>, a <strong>boolean</strong> value.
+      Метод <code>includes()</code> проверяет, если в массиве присутствует строка <code>'ninja'</code>. Так как это не так, метод возвратил <code>false</code>, значение <strong>boolean</strong>.
     </p>
 
     <p>
-      As a matter of fact, when dealing with booleans, typing the keywords <code>true</code> or <code>false</code> is quite rare. Usually, booleans exist as a result of a function call (like <code>includes()</code>) or a <strong>comparison</strong>.
+      На самом деле, когда вы имеете дело с булевыми элементами ключевые слова <code>true</code> или <code>false</code> встречается довольно редко. Обычно логические выражения существуют в результате вызова функции (например, <code>includes()</code>) или <strong>сравнение</strong>.
     </p>
 
     <p>
-      Here's a "<em>greater than</em>" comparison:
+      Вот сравнение "<em>больше, чем</em>":
     </p>
 
     
@@ -1146,14 +1149,14 @@
   </div>
   
     <a class="snippet-copy not-mobile not-tablet">
-      Copy to clipboard
+      Скопировать в буфер обмена
     </a>
   
 </div>
 
 
 <div class="run-snippet case is-mobile is-tablet">
-  <a class="button">Run snippet</a>
+  <a class="button">Выполнить фрагмент</a>
 </div>
 
 
@@ -1245,14 +1248,14 @@
   </div>
   
     <a class="snippet-copy not-mobile not-tablet">
-      Copy to clipboard
+      Скопировать в буфер обмена
     </a>
   
 </div>
 
 
 <div class="run-snippet case is-mobile is-tablet">
-  <a class="button">Run snippet</a>
+  <a class="button">Выполнить фрагмент</a>
 </div>
 
 
@@ -1364,14 +1367,14 @@
   </div>
   
     <a class="snippet-copy not-mobile not-tablet">
-      Copy to clipboard
+      Скопировать в буфер обмена
     </a>
   
 </div>
 
 
 <div class="run-snippet case is-mobile is-tablet">
-  <a class="button">Run snippet</a>
+  <a class="button">Выполнить фрагмент</a>
 </div>
 
 
@@ -1424,14 +1427,14 @@
   </div>
   
     <a class="snippet-copy not-mobile not-tablet">
-      Copy to clipboard
+      Скопировать в буфер обмена
     </a>
   
 </div>
 
 
 <div class="run-snippet case is-mobile is-tablet">
-  <a class="button">Run snippet</a>
+  <a class="button">Выполнить фрагмент</a>
 </div>
 
 
@@ -1492,14 +1495,14 @@
   </div>
   
     <a class="snippet-copy not-mobile not-tablet">
-      Copy to clipboard
+      Скопировать в буфер обмена
     </a>
   
 </div>
 
 
 <div class="run-snippet case is-mobile is-tablet">
-  <a class="button">Run snippet</a>
+  <a class="button">Выполнить фрагмент</a>
 </div>
 
 
@@ -1692,14 +1695,14 @@
   </div>
   
     <a class="snippet-copy not-mobile not-tablet">
-      Copy to clipboard
+      Скопировать в буфер обмена
     </a>
   
 </div>
 
 
 <div class="run-snippet case is-mobile is-tablet">
-  <a class="button">Run snippet</a>
+  <a class="button">Выполнить фрагмент</a>
 </div>
 
 
@@ -1757,14 +1760,14 @@
   </div>
   
     <a class="snippet-copy not-mobile not-tablet">
-      Copy to clipboard
+      Скопировать в буфер обмена
     </a>
   
 </div>
 
 
 <div class="run-snippet case is-mobile is-tablet">
-  <a class="button">Run snippet</a>
+  <a class="button">Выполнить фрагмент</a>
 </div>
 
 
@@ -1870,14 +1873,14 @@
   </div>
   
     <a class="snippet-copy not-mobile not-tablet">
-      Copy to clipboard
+      Скопировать в буфер обмена
     </a>
   
 </div>
 
 
 <div class="run-snippet case is-mobile is-tablet">
-  <a class="button">Run snippet</a>
+  <a class="button">Выполнить фрагмент</a>
 </div>
 
 
@@ -2312,11 +2315,11 @@
 </form>
 
     <p>
-      Thanks for reading!
+      Спасибо за прочтение!
     </p>
 
     <p class="madeby">
-      Made by <a href="https://jgthms.com/" target="_blank">@jgthms</a>
+      Сделано <a href="https://jgthms.com/" target="_blank">@jgthms</a>
     </p>
   </div>
 </div>
